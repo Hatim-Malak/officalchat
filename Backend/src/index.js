@@ -1,0 +1,41 @@
+import express from "express"
+import dotenv from "dotenv"
+import authRoutes from "./Routes/auth.route.js"
+import messageRoutes from "./Routes/message.route.js"
+import { connectdb } from "./lib/db.js"
+import swaggerUi from "swagger-ui-express"
+import swaggerDocument from "./swagger-output.json" with {type:'json'}
+import cookieParser from "cookie-parser"
+import cors from "cors"
+import {server,app} from "./lib/socket.js"
+
+import path from "path"
+
+dotenv.config()
+
+const PORT = process.env.PORT
+app.use(express.json({ limit: '5mb' }));
+app.use(express.urlencoded({ extended: true, limit: '5mb' }));
+app.use(express.json())
+app.use(cookieParser())
+app.use(cors({
+    origin:"http://localhost:5173",
+    credentials:true
+}))
+
+app.use("/api-docs",swaggerUi.serve,swaggerUi.setup(swaggerDocument))
+app.use("/api/auth",authRoutes)
+app.use("/api/message",messageRoutes)
+
+if(process.env.NODE_ENV==="production"){
+    app.use(express.static(path.join(__dirname,"../Frontend/dist")))
+
+    app.get("*",(req,res)=>{
+        res.sendFile(path.join(__dirname,"../Frontend","dist","index.html"))
+    })
+}
+
+server.listen(PORT,()=>{
+    console.log("server is running on port ",PORT)
+    connectdb()
+})

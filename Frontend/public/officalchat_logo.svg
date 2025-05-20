@@ -1,0 +1,20 @@
+<svg width="200" height="100" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg" fill="none" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <rect width="600" height="200" fill="#ffffff00"/>
+
+  <g>
+    <!-- Static circle -->
+    <circle cx="100" cy="100" r="80" fill="#581C87" />
+
+    <!-- Static white rectangle -->
+    <rect x="60" y="65" width="80" height="60" rx="10" fill="white" />
+
+    <!-- Animated checkmark only -->
+    <polyline points="80,95 95,110 120,85" fill="none" stroke="#581C87" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"
+      stroke-dasharray="60" stroke-dashoffset="60">
+      <animate attributeName="stroke-dashoffset" values="60;0;60" dur="1.5s" repeatCount="indefinite" />
+    </polyline>
+  </g>
+
+  <!-- Static text -->
+  <text x="170" y="115" font-family="Arial, sans-serif" font-size="50" fill="white" font-weight="bold">OfficialChat</text>
+</svg>

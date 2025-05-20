@@ -1,12 +1,12 @@
 import React from 'react'
 import { useChatStore } from '../store/useChatStore.js'
-import { useAuthstore } from '../store/useAuthstore.js'
+import { useAuthStore } from '../store/useAuthStore.js'
 import { Link } from 'react-router-dom'
 
 
 const ChatHeader = () => {
     const {selectedUser,setSelectedUser} = useChatStore()
-    const {onlineUsers} = useAuthstore()
+    const {onlineUsers} = useAuthStore()
 
   return (
     <div className='w-full flex bg-purple-900 justify-between items-center pt-2 px-1 pb-1.5 rounded-tr-lg'>

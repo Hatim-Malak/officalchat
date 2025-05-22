@@ -6,7 +6,6 @@ import messageRoutes from "./Routes/message.route.js"
 import { connectdb } from "./lib/db.js"
 import cookieParser from "cookie-parser"
 import cors from "cors"
-import { server, app } from "./lib/socket.js"
 
 import path from "path"
 import { fileURLToPath } from "url"

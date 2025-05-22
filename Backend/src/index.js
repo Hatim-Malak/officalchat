@@ -1,4 +1,5 @@
 import express from "express"
+import http from "http"
 import { initSocket } from "./lib/socket.js"
 import dotenv from "dotenv"
 import authRoutes from "./Routes/auth.route.js"

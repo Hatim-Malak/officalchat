@@ -1,4 +1,5 @@
 import express from "express"
+import { initSocket } from "./lib/socket.js"
 import dotenv from "dotenv"
 import authRoutes from "./Routes/auth.route.js"
 import messageRoutes from "./Routes/message.route.js"
@@ -25,7 +26,8 @@ app.use(cors({
     origin: "http://localhost:5173",
     credentials: true
 }))
-
+const server = http.createServer(app)
+initSocket(server)
 // ✅ Only your real API routes
 app.use("/api/auth", authRoutes)
 app.use("/api/message", messageRoutes)

@@ -26,7 +26,7 @@ const ProfilePage = () => {
       <div className='bg-purple-900 min-h-screen lg:h-[557px] flex justify-center items-center relative'>
         <div className='flex flex-col bg-white rounded-xl h-[490px] w-[390px] justify-around items-center border-2 border-purple-900 shadow '>
           <div className='flex flex-col items-center justify-center pt-2'>
-            <h1 className='font-bold text-2xl'>Profile</h1>
+            <h1 className='font-bold text-2xl text black'>Profile</h1>
             <p className='text-bold text-gray-500 pb-2.5 font-medium'>Your profile information</p>
             <div className='flex relative'>
               <div className='border-[3.5px] border-purple-900 rounded-full h-[110px] w-[110px] '>
@@ -76,12 +76,12 @@ const ProfilePage = () => {
           <div className='w-[300px] p-3'>
             <h2 className='text-lg font-bold'>Account Information</h2>
             <div className='flex justify-between items-center p-2 font-medium'>
-              <span>Member Since</span>
-              <span>{authUser.createdAt?.split("T")[0]}</span>
+              <span className='text-black'>Member Since</span>
+              <span className='text-black'>{authUser.createdAt?.split("T")[0]}</span>
             </div>
             <div className='border border-gray-500'></div>
             <div className='flex justify-between items-center p-2 font-medium'>
-              <span>Account Status</span>
+              <span className='text-black'>Account Status</span>
               <span className='text-green-500'>Active</span>
             </div>
           </div>

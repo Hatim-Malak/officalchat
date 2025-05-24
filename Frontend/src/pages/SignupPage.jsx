@@ -30,7 +30,7 @@ const SignupPage = () => {
   return (
     <>
     <Navbar/>
-    <div className='flex green min-h-screen lg:h-[557px] w-full'>
+    <div className='flex green min-h-screen lg:h-[557px] w-full items-center justify-center'>
       <div className=' text-white w-full lg:w-3/5 h-full flex flex-col items-center justify-center'>
         <div className=' flex flex-col bg-white rounded-xl h-[430px] w-[390px] justify-around items-center border-2 border-purple-900 shadow '>
           <div className='flex flex-col items-center'>

@@ -37,6 +37,9 @@ const AboutPage = () => {
             </Link>
             .
           </p>
+          <div className='flex justify-start items-center'>
+            <p>Created By-<span className='font-bold'>Hatim Malak</span></p>
+          </div>
         </div>
         <Link className='absolute right-2 top-1' to="/">
           <img src="/cross.svg" alt="cross" className='w-[30px]' />

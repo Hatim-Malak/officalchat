@@ -18,7 +18,7 @@ const LoginPage = () => {
     login(formData)
   }
   return (
-    <div className='min-h-screen'>
+    <div >
       <Navbar/>
       <div className='flex min-h-screen bg-purple-900 lg:h-[557px] w-full items-center justify-center'>
       <div className=' text-white w-full lg:w-3/5 h-full flex flex-col items-center justify-center'>

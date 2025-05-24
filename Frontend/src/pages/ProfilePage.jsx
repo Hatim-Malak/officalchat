@@ -21,7 +21,7 @@ const ProfilePage = () => {
     }
   }
   return (
-    <div className='min-h-screen'>
+    <div >
       <Navbar />
       <div className='bg-purple-900 min-h-screen lg:h-[557px] flex justify-center items-center relative'>
         <div className='flex flex-col bg-white rounded-xl h-[490px] w-[390px] justify-around items-center border-2 border-purple-900 shadow '>

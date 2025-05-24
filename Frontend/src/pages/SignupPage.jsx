@@ -28,7 +28,7 @@ const SignupPage = () => {
     if(success===true) signup(formData)
   }
   return (
-    <div className='min-h-screen'>
+    <div>
     <Navbar/>
     <div className='flex bg-purple-900 min-h-screen lg:h-[557px] w-full items-center justify-center'>
       <div className=' text-white w-full lg:w-3/5 h-full flex flex-col items-center justify-center'>

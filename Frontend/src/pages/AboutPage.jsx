@@ -5,7 +5,7 @@ import { MessageCircleHeart } from 'lucide-react'; // Optional icon for flair
 
 const AboutPage = () => {
   return (
-    <div className='min-h-screen'>
+    <div >
       <Navbar />
       <div className="flex min-h-screen lg:h-[557px] py-10 w-full bg-purple-900 justify-center items-center relative">
         <div className="max-w-md w-full bg-white shadow-2xl rounded-2xl p-8 flex flex-col gap-6 items-center text-center">

@@ -8,7 +8,7 @@ import { useChatStore } from '../store/useChatStore.js'
 const HomePage = () => {
   const {selectedUser} = useChatStore()
   return (
-    <div className='min-h-screen'>
+    <div>
       <Navbar/>
       <div className='min-h-screen lg:h-[557px] w-full bg-purple-800 flex justify-center items-center'>
         <div className='bg-white h-[680px] lg:h-[530px] w-[380px] lg:w-[900px] rounded-lg shadow flex'>

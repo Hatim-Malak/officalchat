@@ -54,11 +54,11 @@ const Chatend = () => {
                 <input type="text" value={text} onChange={(e)=>setext(e.target.value)} className='w-[450px] py-1.5 px-2 border-2 border-purple-900 rounded-lg' placeholder='Type a message..' />
                 <div className='flex gap-2'>
                     <label htmlFor="img-upload" className='cursor-pointer p-2 rounded-full bg-purple-900'>
-                        <img src="/image.svg" alt="image" className='lg:w-[20px] w-[40px]' />
+                        <img src="/image.svg" alt="image" className='lg:w-[20px] w-[60px]' />
                         <input type="file" id='img-upload' ref={fileInputRef} accept='image/*' className='hidden' onChange={handleImage} />
                     </label>
                     <button className='p-2 rounded-full bg-purple-900' disabled={!text.trim()&&!imagePreview}>
-                        <img src="/send.svg" alt="send" className='lg:w-[20px] w-[40px]' />
+                        <img src="/send.svg" alt="send" className='lg:w-[20px] w-[60px]' />
                     </button>
                 </div>
             </form>

@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <>
       <Navbar/>
-      <div className=' h-[872px] lg:h-[557px] w-full bg-purple-800 flex justify-center items-center'>
+      <div className=' min-h-screen lg:h-[557px] w-full bg-purple-800 flex justify-center items-center'>
         <div className='bg-white h-[800px] lg:h-[530px] w-[400px] lg:w-[900px] rounded-lg shadow flex'>
           <div className='w-1/5 lg:w-1/3 bg-purple-900 rounded-bl-lg rounded-tl-lg p-2 flex justify-center items-center flex-col gap-2'>
             <div className='flex justify-start w-[20px] lg:w-[272px] gap-2'>

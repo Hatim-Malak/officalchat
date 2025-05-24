@@ -23,7 +23,7 @@ const ProfilePage = () => {
   return (
     <div className='min-h-screen'>
       <Navbar />
-      <div className='bg-purple-900 lg:h-[557px] flex justify-center items-center relative'>
+      <div className='bg-purple-900 h-full lg:h-[557px] flex justify-center items-center relative'>
         <div className='flex flex-col bg-white rounded-xl h-[490px] w-[390px] justify-around items-center border-2 border-purple-900 shadow '>
           <div className='flex flex-col items-center justify-center pt-2'>
             <h1 className='font-bold text-2xl'>Profile</h1>

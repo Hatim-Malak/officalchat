@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   const {logout,authUser} = useAuthstore()
   return (
-    <div className='flex bg-purple-800 text-white items-center justify-between pr-5 pl-3 h-[50px] w-[430px] lg:w-full'>
+    <div className='flex bg-purple-800 text-white items-center justify-between pr-5 pl-3 h-[50px] w-screen lg:w-full'>
       <div>
         <img src="officalchat_logo.svg" alt="logo" className='w-[140px]' />
       </div>

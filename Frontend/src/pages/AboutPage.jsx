@@ -7,7 +7,7 @@ const AboutPage = () => {
   return (
     <div className='min-h-screen'>
       <Navbar />
-      <div className="flex h-full lg:h-[557px] py-10 w-full bg-purple-900 justify-center items-center relative">
+      <div className="flex min-h-screen lg:h-[557px] py-10 w-full bg-purple-900 justify-center items-center relative">
         <div className="max-w-md w-full bg-white shadow-2xl rounded-2xl p-8 flex flex-col gap-6 items-center text-center">
           <div className="flex items-center gap-2 text-purple-800">
             <MessageCircleHeart className="w-8 h-8" />
@@ -37,7 +37,7 @@ const AboutPage = () => {
             </Link>
             .
           </p>
-          <div className='flex justify-start items-center'>
+          <div className='flex justify-start items-center text-black'>
             <p>Created By-<span className='font-bold'>Hatim Malak</span></p>
           </div>
         </div>

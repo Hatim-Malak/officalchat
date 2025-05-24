@@ -41,7 +41,7 @@ const ChatContainer = () => {
   return (
     <div className='flex flex-col gap-1'>
       <ChatHeader />
-      <div className="flex flex-col w-full h-[630px] lg:h-[360px] gap-2 overflow-auto px-2">
+      <div className="flex flex-col w-full h-[500px] lg:h-[360px] gap-2 overflow-auto px-2">
         {messages.map((message) => {
           const isSender = message.senderId === authUser._id
           const profilePic = isSender

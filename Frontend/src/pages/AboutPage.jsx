@@ -5,9 +5,9 @@ import { MessageCircleHeart } from 'lucide-react'; // Optional icon for flair
 
 const AboutPage = () => {
   return (
-    <>
+    <div className='min-h-screen'>
       <Navbar />
-      <div className="flex lg:h-[557px] min-h-screen py-10 w-full bg-purple-900 justify-center items-center relative">
+      <div className="flex lg:h-[557px] py-10 w-full bg-purple-900 justify-center items-center relative">
         <div className="max-w-md w-full bg-white shadow-2xl rounded-2xl p-8 flex flex-col gap-6 items-center text-center">
           <div className="flex items-center gap-2 text-purple-800">
             <MessageCircleHeart className="w-8 h-8" />
@@ -42,7 +42,7 @@ const AboutPage = () => {
           <img src="/cross.svg" alt="cross" className='w-[30px]' />
         </Link>
       </div>
-    </>
+    </div>
   );
 };
 
